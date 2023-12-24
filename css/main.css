@@ -54,7 +54,7 @@
 
 .layers__item {
 	position: absolute;
-	inset: -4vw;
+	inset: -5vw;
 	/* top: -5vw;
 	right: -5vw;
 	left: -5vw;
@@ -119,6 +119,7 @@
 }
 
 .button-start {
+	z-index: 10;
 	padding: calc(var(--index) * .7) calc(var(--index) * 1.25);
 	font-family: merriweather-italic-3d;
 	/* font-weight: 600; */
@@ -132,4 +133,9 @@
 	border: 3px solid rgb(255 255 255 / .4);
 	outline: none;
 	cursor: pointer;
+	transition: transform var(--transition);
+}
+
+.button-start:hover {
+	transform: rotateX(50deg);
 }
